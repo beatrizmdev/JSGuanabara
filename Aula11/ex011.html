@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade cheeeck</title>
+    </head>
+<body>
+    <h1>Qual é a sua nacionalidade?</h1>
+    <input type="text" name="qual" id="qualn">
+    <input type="button" value="Enviar" onclick="envio()">
+    <div id="res">
+    </div>
+
+    <script>
+        function envio() {
+            var lig = document.getElementById('qualn')
+            var país = lig.value
+            var res = document.getElementById('res')
+            res.innerHTML = `<p>Vivendo em ${país}</p>`
+            if (país == 'Brasil') {
+                res.innerHTML += `<p>Você é brasileiro!</p>`
+            } else {
+                res.innerHTML += `<p>Você <strong>NÃO É</strong> brasileiro!<p>`
+            }
+        }
+
+        
+    </script>
+</body>
+</html>

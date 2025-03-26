@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste mortaaaal</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+        input {
+            font: normal 18pt Arial;
+            widht: 100px;
+        }
+        div {
+            font: normal 18pt Arial;
+            color: rgb(6, 85, 6);
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste mortaaaal!!!</h1>
+    <p1>Coloque seu nome + o nome do seu parceiro e descubra se o amor de vocês é real:</p1>
+    <input type="text" name="p1" id="n1"> + 
+    <input type="text" name="p2" id="n2">
+    <input type="button" value="Somar" onclick="testar()">
+    <div id="res">Resultado</div>
+
+    <script>
+        function testar() {
+            var A1 = document.getElementById('n1')
+            var A2 = document.getElementById('n2')
+            var res = document.getElementById('res')
+            res.innerHTML = `O amor de ${A1.value} e ${A2.value} é realmente <strong>eterno</strong>!! ${typeof(A1)}`            
+        }
+    </script>
+</body>
+</html>
